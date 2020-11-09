@@ -49,7 +49,7 @@ if N>0:
 ```
 Selanjutnya kalian bisa langsung  memasukan syntax ini untuk melengkapi syntax diatas supaya bisa berjalan dengan baik seperti pada gambar dibawah ini.
 
-[latt2](https://user-images.githubusercontent.com/72722965/98513325-3f76f280-229a-11eb-9384-3b265b695e33.PNG)
+![latt2](https://user-images.githubusercontent.com/72722965/98513325-3f76f280-229a-11eb-9384-3b265b695e33.PNG)
 
 Maka jika digabungkan, cara untuk mencari nilai max dari ketiga data yang diinputkan adalah dengan menggunakan syntax
 ```python
