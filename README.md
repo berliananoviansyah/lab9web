@@ -1,97 +1,88 @@
-# Labspy02
-Tugas pada power point 2 pertemuan 7
+|  Berliana Noviansyah  |      312010373     |
+|-----------------------|--------------------|
+|    Pemrograman Web    |      TI.20.A1      |
+|     Pertemuan 11      |  Praktikum 9 & 10  |
 
-# PERTEMUAN 7
-### NAMA: BERLIANA NOVIASNYAH
-### KELAS: TI. 20. A. 1
-### NIM: 312010373
-___________________________________________________________________________________
+# Praktikum 9 & 10 Pertemuan 11
 
- Pada pertemuan 7 tugas PPT ke-2 ini, saya diberikan beberapa tugas oleh dosen saya yaitu 
+## 1). Menjalankan Xampp Server
 
-![Tugas Praktikum 2](https://user-images.githubusercontent.com/72906579/98377632-a5376480-2077-11eb-914b-7edfddf5d866.png)
+Langkah pertama yang harus dilakukan adalah menjalankan apache dan mysql pada aplikasi xampp server.
 
-untuk mencari sebuah nilai maksimal dari 3 data yang sebelumnya telah diinput, dan setelah mendapat nilai maksimalnya, dirubah menjadi dalam sebuah bentuk flowchart.
 
-## TUGAS PRAKTIKUM 2
-##### MENGINPUT DATA DAN MENCARI NILAI MAX
-________________________________________________________________________________________
-Pertama-tama disini saya akan mencoba untuk menginput 3 data dengan menggunakan syntax berikut terlebih dahulu.
-```python
-a = int(input("Masukkan bilangan 1: "))
-b = int(input("Masukkan bilangan 2: "))
-c = int(input("Masukkan bilangan 3: "))
+## 2) Membuat Folder Baru
+
+Lalu buatlah folder baru didalam folder *lab9web* dengan nama *lab9_php_modular*
+Kemudian jalankan pada localhost server dengan mengakses http://localhost/lab9web/lab9_php_modular/
+
+
+## 3). Membuat File
+
+Setelahnya, buatlah file baru dengan nama header.php di dalam folder lab9_php modular. Lalu buat header seperti pada contoh dibawah ini:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Modularisasi</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Modularisasi Menggunakan Require</h1>
+        </header>
+        <nav>
+            <a href="home.php">Home</a>
+            <a href="about.php">About</a>
+            <a href="kontak.php">Contact</a>
+        </nav>
 ```
-Masukan syntax tersebut dengan angka yang kalian inginkan. 
 
-![PPT2LAT1](https://user-images.githubusercontent.com/72722965/98512346-c3c87600-2298-11eb-8678-cb72e02a1723.PNG)
+## 4). Membuat Footer
 
-Jika sudah mendapat tampilan seperti gambar diatas, maka kalian sudah berhasil menginput ketiga data tersebut. <br>
+Setelah membuat header, lanjut untuk membuat footer dengan membuat file baru dengan nama *footer.php* di dalam folder lab9_php_modular.
 
-Langkah selanjutnya adalah mencari tahu nilai terbesar (max) dari ketiga data tersebut. Sebelum memulainya kalian harus memasukan terlebih dahulu berapa jumlah data yang akan kalian kerjakan dari ketiga data tersebut dengan syntax <br>
-```python
-N=int(input("banyaknya data = "))
+```html
+<footer>
+        <p>&copy; 2021, Informatika, Universitas Pelita Bangsa</p>
+    </footer>
+    </div>
+</body>
+</html>
 ```
-Karena disini saya diberi tugas mencari nilai max dari ketiga data maka saya akan menggunkan semua data diatas.
 
-```python
-if N>0:
-    i=1
-    x=int(input("data ke -"+str(i)+"="))
-    max=x;total=x
-    for i in range(2,N+1):
-        x=int (input("data ke -"+str(i)+"="))
-        total+=x
-        if max<x:
-            max=x
 
-    print("bilangan terbesar =",max)
+## 5). Membuat Home
+
+Buatlah file dengan nama *home.php* di dalam folder lab9_php_modular. Lalu masukan codingan berikut:
+
+```html
+<?php require('header.php'); ?>
+
+<div class="content">
+    <h2>Ini Halaman Home</h2>
+    <p>Ini adalah bagian dari content halaman</p>
+</div>
+
+<?php require('footer.php'); ?>
 ```
-Selanjutnya kalian bisa langsung  memasukan syntax ini untuk melengkapi syntax diatas supaya bisa berjalan dengan baik seperti pada gambar dibawah ini.
 
-![latt2](https://user-images.githubusercontent.com/72722965/98513325-3f76f280-229a-11eb-9384-3b265b695e33.PNG)
 
-Maka jika digabungkan, cara untuk mencari nilai max dari ketiga data yang diinputkan adalah dengan menggunakan syntax
-```python
-N=int(input("banyaknya data = "))
-if N>0:
-    i=1
-    x=int(input("data ke -"+str(i)+"="))
-    max=x;total=x
-    for i in range(2,N+1):
-        x=int (input("data ke -"+str(i)+"="))
-        total+=x
-        if max<x:
-            max=x
+## 6). Membuat Halaman 'About'
 
-    print("bilangan terbesar =",max)
+Sama seperti sebelumnya, buatlah file dengan nama *about.php* di dalam folder lab9_php_modular. Lalu masukan coding berikut:
+
+```html
+<?php require('header.php'); ?>
+
+<div class="content">
+    <h2>Ini Halaman About</h2>
+    <p>Ini adalah bagian content dari halaman.</p>
+</div>
+
+<?php require('footer.php'); ?>
 ```
-Seperti inilah hasil akhirnya 
 
-![hasil](https://user-images.githubusercontent.com/72722965/98513597-aeece200-229a-11eb-82e3-3bea9c3f9b71.PNG)
-
-
-##### MERUBAH DATA DIATAS MENJADI DALAM BENTUK FLOWCHART
-__________________________________________________________________________________
-Setelah kalian mendapatkan semua data diatas langkah selanjutnya adalah mengubahnya menjadi dalam bentuk flowchart seperti ini
-
-![flowchart](https://user-images.githubusercontent.com/72722965/98514576-4272e280-229c-11eb-9d0f-2ea264dc6f5c.PNG)
-Untuk bisa mendapatkan hasil flowchart diatas, maka kalian harus mendownload flowgorithm terlebih dahulu. Download lah pada web resminya yaitu 
-```python
-http://www.flowgorithm.org/download/index.htm
-```
-Download lah yang sesuai dengan laptop kalian agar tidak terjadi kendala saat sedang mengoperasikannya.
-
-![Download Flow](https://user-images.githubusercontent.com/72906579/98425077-74325080-20c6-11eb-8cc6-4a64210e290a.png)
-
-Setelah mendapat tampilan seperti dibawah ini kalian bisa mengklik pada bagian garis hitamnya
-
-![Flow Step1](https://user-images.githubusercontent.com/72906579/98389639-e5eaaa00-2086-11eb-9dd2-107a642334ff.png)
-
-Pada tampilan diatas kalian dapat memilih menu mana yang kalian butuhkan.
-
-Jika kalian sudah mengerjakannya hingga akhir, maka step akhir adalah kalian hanya perlu mengecek apakah flowchart tersebut sudah bekera dengan baik atau belum dengan cara sebagai berikut
-
-![Flow Step2](https://user-images.githubusercontent.com/72906579/98391855-cbfe9680-2089-11eb-8062-164af41a5509.png)
-
-Jika sudah me 'run' berkali kali dan mendapatkan jawaban sama yang sesuai itu berbarti flowchart yang kalian buat sudah benar dan bekerja dengan baik.
