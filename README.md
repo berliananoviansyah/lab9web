@@ -59,7 +59,7 @@ Setelah membuat header, lanjut untuk membuat footer dengan membuat file baru den
 
 Buatlah file dengan nama *home.php* di dalam folder lab9_php_modular. Lalu masukan codingan berikut:
 
-```html
+```php
 <?php require('header.php'); ?>
 
 <div class="content">
@@ -75,7 +75,7 @@ Buatlah file dengan nama *home.php* di dalam folder lab9_php_modular. Lalu masuk
 
 Sama seperti sebelumnya, buatlah file dengan nama *about.php* di dalam folder lab9_php_modular. Lalu masukan coding berikut:
 
-```html
+```php
 <?php require('header.php'); ?>
 
 <div class="content">
@@ -104,3 +104,4 @@ Sama seperti sebelumnya, buatlah file dengan nama *about.php* di dalam folder la
 # Laporan dan Tugas
 
 Implementasikan konsep modularisasi pada kode program **Praktikum 8** tentang database, sehingga setiap halamannya memiliki template yang sama.
+
