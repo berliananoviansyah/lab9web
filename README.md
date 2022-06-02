@@ -1,9 +1,9 @@
 |  Berliana Noviansyah  |      312010373     |
 |-----------------------|--------------------|
 |    Pemrograman Web    |      TI.20.A1      |
-|     Pertemuan 11      |  Praktikum 9 & 10  |
+|     Pertemuan 11      |     Praktikum 9    |
 
-# Praktikum 9 & 10 Pertemuan 11
+# Praktikum 9 Pertemuan 11
 
 ## 1). Menjalankan Xampp Server
 
