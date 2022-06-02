@@ -86,3 +86,15 @@ Sama seperti sebelumnya, buatlah file dengan nama *about.php* di dalam folder la
 <?php require('footer.php'); ?>
 ```
 
+
+## Berikut adalah tampilan pada halaman:
+
+**HOME**
+
+![Halaman_Home](img/home.png)
+
+
+
+**ABOUT**
+
+![Halaman_About](img/about.png)
