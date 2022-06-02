@@ -98,3 +98,9 @@ Sama seperti sebelumnya, buatlah file dengan nama *about.php* di dalam folder la
 **ABOUT**
 
 ![Halaman_About](img/about.png)
+
+
+
+# Laporan dan Tugas
+
+Implementasikan konsep modularisasi pada kode program **Praktikum 8** tentang database, sehingga setiap halamannya memiliki template yang sama.
